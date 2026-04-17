@@ -1,14 +1,4 @@
 const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
-const express = require("express");
-const app = express();
-
-app.get("/", (req, res) => {
-  res.send("Bot activo 24/7");
-});
-
-app.listen(3000, () => {
-  console.log("Web activa");
-});
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
 });
