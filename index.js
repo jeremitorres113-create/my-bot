@@ -1,14 +1,4 @@
-// 🔥 SERVIDOR WEB (para Render + UptimeRobot)
-const express = require("express");
-const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Bot activo 24/7");
-});
-
-app.listen(3000, () => {
-  console.log("Web activa");
-});
 
 // 🤖 BOT
 const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
